@@ -7,11 +7,13 @@
         {% block title %}
         My Hello Web App Project {% endblock title %}
     </title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" /> {% block header %}{% endblock header %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+    {% block header %}{% endblock header %}
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1>Hello Web App</h1>
         <nav>
             <ul>
@@ -20,7 +22,17 @@
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <nav class="pa3 pa4-ns">
+        <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Worthington South</a>
+        <div class="tc pb3">
+            <a class="link dim gray f6 f5-ns dib mr3" href="{% url 'home' %}" title="Home">Home</a>
+            <a class="link dim gray f6 f5-ns dib mr3" href="{% url 'about' %}" title="About">About</a>
+            <a class="link dim gray f6 f5-ns dib" href="{% url 'contact' %}" title="Contact">Contact</a>
+        </div>
+    </nav>
+
     {% block content %}{% endblock content %}
     {% block footer %}{% endblock footer %}
 </body>
