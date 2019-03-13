@@ -1,5 +1,178 @@
 {% extends 'base.html' %} {% block title %}
 About - {{ block.super }} {% endblock title %}
-{% block content %} <h1>About page</h1>
-<p>About content.</p>
+{% block content %}
+
+<nav class="bt bb tc mw7 center mt4">
+    <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="{% url 'home' %}">Home</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="{% url 'about' %}">About</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="{% url 'contact' %}">Contact</a>
+</nav>
+
+<main class="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l mw9 center">
+
+
+
+    <div class="fl w-50 w-50 w-25-l pl2 pl0-l pr2-m pr4-l mb3 mb4-l">
+        <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/049.jpg) center;">
+        </div>
+    </div>
+    <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline">
+        <div class="pa4">
+            <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">Worthington South</h1>
+            <p class="lh-copy mt2 mt3-m mt5-l f6">
+                <span class="fw9 f6 f1-l db lh-title mb3 mb4-l">Building Trust and Other Things</span>
+                <span class="db-l measure-wide">
+                    That is the essence of syntax: the discipline
+                    that controls the proper use of grammar in the construction of phrases and the articulation of a
+                    language, Design. The syntax of design is provided by many components in the nature of the project.
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="cf">
+        <div class="fl w-100 w-25-l pl3-l mb3 mb4-l">
+            <div class="cover pv5 pv6-m pv7-l"
+                style="background:black url(http://mrmrs.github.io/photos/051.jpg) center;"> </div>
+        </div>
+
+</main>
+
+<!-- SPACE BAR -->
+<!-- <div class="cf">
+            <div class="fl w-25 tc pv5 bg-black-025">
+
+            </div>
+            <div class="fl w-25 tc pv5 bg-black-025">
+
+            </div>
+            <div class="fl w-25 tc pv5 bg-black-025">
+
+            </div>
+            <div class="fl w-25 tc pv5 bg-black-025">
+
+            </div>
+        </div> -->
+
+
+<!-- SPACE BAR 2 -->
+<!-- <ul class="list pl0">
+    <li class="pa3 pa4-ns bb b--black-10">
+        <span class="f5 db lh-copy measure">
+        </span>
+    </li>
+    <li class="pa3 pa4-ns bb b--black-10">
+        <span class="f5 db lh-copy measure">
+        </span>
+    </li> -->
+
+<article class="cf ph3 ph5-ns pv5">
+    <header class="fn fl-ns w-50-ns pr4-ns">
+        <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
+            Services We Provide
+        </h1>
+        <h2 class="f3 mid-gray lh-title">
+            Another statement here
+        </h2>
+    </header>
+    <div class="fn fl-ns w-50-ns">
+        <p class="f5 lh-copy measure mt0-ns">
+            TYPOGRAPHY, even when poorly executed, can never be taken for granted;
+            nor is it ever accidental. Indeed, beauti- fully typeset pages are always
+            the result of long experience. Now and then they even attain the rank of
+            great artistic achievement. But the art of typesetting stands apart from
+            ex- pressive artwork, because the appeal is not limited to a small
+            circle. It is open to everyone's critical judgment, and nowhere does this
+            judgment carry more weight. Typography that can- not be read by everybody
+            is useless. Even for someone who constantly ponders matters of
+            readability and legibility, it is difficult to determine whether
+            something can be read with ease, but the average reader will rebel at
+            once when the type is too small or otherwise irritates the eye; both are
+            signs of a certain illegibility already.
+        </p>
+        <p class="f5 lh-copy measure">
+            All typography consists of letters. These appear either in the form of a
+            smoothly running sentence or as an assembly of lines, which may even have
+            contrasting shapes. Good typog- raphy begins, and this is no minor
+            matter, with the typeset- ting of a single line of text in a book or a
+            newspaper. Using exactly the same typeface, it is possible to create either
+            a pleasant line, easily read, or an onerous one. Spacing, if it is too wide
+            or too compressed, will spoil almost any typeface.
+        </p>
+    </div>
+</article>
+
+<div class="cf dn">
+    <div class="fl w-100 w-50-l">
+        <p class="f5 pv4">
+            During high tides, water would flow directly into the pools from the
+            nearby ocean, recycling the <span class="db f4 f3-m f1-l fw6 measure lh-title">two million US gallons of
+                water in about an hour. </span>
+        </p>
+    </div>
+    <div class="fl w-100 w-50-l">
+        <p class="f5">
+            During low tides, a powerful turbine water pump,
+            built inside a cave at sea level, could be switched on from a control
+            room and could fill the tanks at a rate of 6,000 US gallons a minute,
+            recycling all the water in five hours.
+        </p>
+    </div>
+</div>
+<div class="cf">
+    <div class="fl w-100 w-50-l pr2-l pb3">
+        <img class="db w-100" src="http://mrmrs.github.io/photos/010.jpg"
+            alt="Photo of a dusk skyline above a grassy rockface covered in trees.">
+    </div>
+    <div class="fl w-50 w-50-l pr1 pr0-l pl2-l pb3">
+        <img class="db w-100" src="http://mrmrs.github.io/photos/011.jpg"
+            alt="Photo of the sea and sky on the horizon with the foundations of a demolished house.">
+    </div>
+    <div class="fl w-50 w-50-l pl2 pl0-l pr2-l pb3">
+        <img class="db w-100" src="http://mrmrs.github.io/photos/012.jpg"
+            alt="Photo of the sea with mist covering the rocky formations near the shore.">
+    </div>
+    <div class="fl w-100 w-50-l pl2-l">
+        <img class="db w-100" src="http://mrmrs.github.io/photos/013.jpg"
+            alt="Photo of the foundations of a building on a cliff overlooking a lighthouse.">
+    </div>
+</div>
+</div>
+</div>
+
+<!-- SOCIAL FOOTER -->
+<footer class="pv4 ph3 ph5-ns tc">
+    <a class="link dim gray dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="#" title="">
+        <svg data-icon="facebook" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>facebook icon</title>
+            <path
+                d="M8 12 L13 12 L13 8 C13 2 17 1 24 2 L24 7 C20 7 19 7 19 10 L19 12 L24 12 L23 18 L19 18 L19 30 L13 30 L13 18 L8 18 z">
+            </path>
+        </svg>
+    </a>
+    <a class="link dim gray dib h2 w2 br-100 mr3 pa2 bg-near-white ba b--black-10" href="#" title="">
+        <svg data-icon="twitter" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>twitter icon</title>
+            <path
+                d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4">
+            </path>
+        </svg>
+    </a>
+    <a class="link dim gray dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="#" title="">
+        <svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>github icon</title>
+            <path
+                d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z">
+            </path>
+        </svg>
+    </a>
+    <a class="link dim gray dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="#" title="">
+        <svg data-icon="dribbble" viewBox="0 0 32 32" style="fill:currentcolor">
+            <title>dribbble icon</title>
+            <path
+                d="M16 0 A16 16 0 0 0 0 16 A16 16 0 0 0 16 32 A16 16 0 0 0 32 16 A16 16 0 0 0 16 0 M5 11.5 A12 12 0 0 1 11 5 A46 46 0 0 1 13.5 9.25 A46 46 0 0 1 5 11.5 M15 4 A12 12 0 0 1 21.5 5.25 A46 46 0 0 1 17 7.75 A50 50 0 0 0 15 4 M4 16 A50 50 0 0 0 15 13 A46 46 0 0 1 16 15.5 A26 26 0 0 0 6 22.5 A12 12 0 0 1 4 16 M18.5 11.5 A50 50 0 0 0 25 8 A12 12 0 0 1 28 13.75 A26 26 0 0 0 19.75 14.5 A50 50 0 0 0 18.5 11.5 M17 19.5 A46 46 0 0 1 18 28 A12 12 0 0 1 8.75 25.5 A22 22 0 0 1 17 19.5 M20.75 18.25 A22 22 0 0 1 28 17.75 A12 12 0 0 1 22 26.5 A50 50 0 0 0 20.75 18.25">
+            </path>
+        </svg>
+    </a>
+</footer>
+
 {% endblock content %}

@@ -13,26 +13,13 @@
 </head>
 
 <body>
-    <!-- <header>
-        <h1>Hello Web App</h1>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
+    <section class="vh-100 bg-washed-blue baskerville">
+        <header class="tc ph5 lh-copy">
+            <h1 class="f1 f-headline-l code mb3 fw9 dib tracked-tight light-purple">404</h1>
+            <h2 class="tc f1-l fw1">Sorry, we can't find the page you are looking for.</h2>
+        </header>
 
-    <nav class="pa3 pa4-ns">
-        <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Worthington South</a>
-        <div class="tc pb3">
-            <a class="link dim gray f6 f5-ns dib mr3" href="{% url 'home' %}" title="Home">Home</a>
-            <a class="link dim gray f6 f5-ns dib mr3" href="{% url 'about' %}" title="About">About</a>
-            <a class="link dim gray f6 f5-ns dib" href="{% url 'contact' %}" title="Contact">Contact</a>
-        </div>
-    </nav>
-
+    </section>
     {% block content %}{% endblock content %}
     {% block footer %}{% endblock footer %}
 </body>
