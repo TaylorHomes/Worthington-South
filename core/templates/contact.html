@@ -1,34 +1,63 @@
 {% extends 'base.html' %} {% block title %}
 Contact - {{ block.super }} {% endblock title %}
 {% block content %}
-<nav class="bt bb tc mw7 center mt4">
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="{% url 'home' %}">Home</a>
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="{% url 'about' %}">About</a>
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="{% url 'contact' %}">Contact</a>
+
+<!-- NAV BAR -->
+<nav class="baskerville pa3 pa4-ns">
+    <a class="ttu tracked link dim black b f6 f5-ns dib mr3" href="#" title="Home">Worthington South</a>
+    <!-- <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a> -->
+    <a class="ttu link dim gray    fr f6 f5-ns dib mr3" href="{% url 'home' %}" title="Home">Home</a>
+    <a class="ttu link dim gray    fr pl3 f6 f5-ns dib mr3" href="{% url 'about' %}" title="About">About</a>
+    <a class="ttu link dim gray    fr f6 f5-ns dib" href="{% url 'contact' %}" title="Contact">Contact</a>
 </nav>
 
+<!-- <article>
+    <header class="bg-gold sans-serif">
+        <div class="mw9 center pa4 pt5-ns ph7-l">
 
-<article class="pa4 black-80">
+            <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+                <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+                    Contact Us
+                </span>
+            </h3>
+
+        </div>
+    </header>
+</article> -->
+
+<header class="bb b--black-70 pv4 pl5 bt">
+    <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3 avenir">Connect With Us</h3>
+    <h4 class="f3 fw4 lh-title mt0 avenir">Send an email and we'll be in touch!</h4>
+</header>
+
+<main class="w-100 cf baskerville dark-gray bg-white pa3 pa4-m pa5-l mw9 center">
+    <div class="fl w-50 pr2 pr3-l mb3 mb4-l">
+        <div class="cover pv5 pv6-m pv7-l"
+            style="background:black url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60) center;">
+        </div>
+    </div>
     <form action="sign-up_submit" method="get" accept-charset="utf-8">
         <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
             <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
             <div class="mt3">
-                <label class="db fw4 lh-copy f6" for="email-address">First name</label>
+                <label class="db fw4 lh-copy f6" for="email-address">First Name</label>
                 <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email-address"
                     id="email-address">
-                <label class="db fw4 lh-copy f6" for="email-address">First name</label>
+
+                <label class="db fw4 lh-copy f6" for="email-address">Email Address</label>
                 <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email-address"
                     id="email-address">
-                <label class="db fw4 lh-copy f6" for="email-address">First name</label>
+                <label class="db fw4 lh-copy f6" for="email-address">Message</label>
                 <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email-address"
                     id="email-address">
 
             </div>
         </fieldset>
         <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit"
-                value="Sign Up"></div>
+                value="Connect"></div>
     </form>
-</article>
+
+</main>
 
 
 

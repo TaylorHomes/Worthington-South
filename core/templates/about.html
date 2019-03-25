@@ -2,40 +2,142 @@
 About - {{ block.super }} {% endblock title %}
 {% block content %}
 
-<nav class="bt bb tc mw7 center mt4">
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="{% url 'home' %}">Home</a>
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="{% url 'about' %}">About</a>
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="{% url 'contact' %}">Contact</a>
+<nav class="baskerville pa3 pa4-ns">
+    <a class="ttu tracked link dim black b f6 f5-ns dib mr3" href="#" title="Home">Worthington South</a>
+    <!-- <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a> -->
+    <a class="ttu link dim gray    fr f6 f5-ns dib mr3" href="{% url 'home' %}" title="Home">Home</a>
+    <a class="ttu link dim gray    fr pl3 f6 f5-ns dib mr3" href="{% url 'about' %}" title="About">About</a>
+    <a class="ttu link dim gray    fr f6 f5-ns dib" href="{% url 'contact' %}" title="Contact">Contact</a>
 </nav>
 
-<main class="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l mw9 center">
+<main>
+    <article class="bg-white">
+        <div class="vh-75 cover bg-center"
+            style="background-image: url(https://images.unsplash.com/photo-1542147864-027e5d1330c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);">
+        </div>
+        <div class="ph4 ph5-m ph6-l">
+            <div class="pa4">
+                <blockquote class="avenir ml0 mt0 pl4 black-90 bl bw2 b--blue">
+                    <p class="db lh-copy black-70  fw1 mv0 f4 f3-m f2-l measure">
+                        More specific copy here regarding your the services your business provides and a little bit more
+                        about process. A superlative statement about why Worthington South is the best there is.
+                    </p>
+                </blockquote>
+            </div>
+    </article>
 
 
-
-    <div class="fl w-50 w-50 w-25-l pl2 pl0-l pr2-m pr4-l mb3 mb4-l">
-        <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/049.jpg) center;">
+    <div class="avenir flex justify-center pb5">
+        <div class="f3 outline w-25 pa3 mr2 tc ttu">
+            <div class="pa2 tc">
+                <img src="https://images.unsplash.com/photo-1492105232359-ca132c09762c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                    class="br-100 ba h4 w4 dib" alt="avatar">
+            </div>
+            <p>Design</p>
+        </div>
+        <div class="f3 outline w-25 pa3 mr2 tc ttu">
+            <div class="pa2 tc">
+                <img src="https://images.unsplash.com/photo-1515446134809-993c501ca304?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                    class="br-100 ba h4 w4 dib" alt="avatar">
+            </div>
+            <p>Build</p>
+        </div>
+        <div class="f3 outline w-25 pa3 mr2 tc ttu">
+            <div class="pa2 tc">
+                <img src="https://images.unsplash.com/photo-1489272889853-8093472c6f42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                    class="br-100 ba h4 w4 dib" alt="avatar">
+            </div>
+            <p>Remodel</p>
         </div>
     </div>
-    <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline">
-        <div class="pa4">
-            <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">Worthington South</h1>
-            <p class="lh-copy mt2 mt3-m mt5-l f6">
-                <span class="fw9 f6 f1-l db lh-title mb3 mb4-l">Building Trust and Other Things</span>
-                <span class="db-l measure-wide">
-                    That is the essence of syntax: the discipline
-                    that controls the proper use of grammar in the construction of phrases and the articulation of a
-                    language, Design. The syntax of design is provided by many components in the nature of the project.
-                </span>
-            </p>
+
+    <div class="avenir ba pa5 b--silver bg-white { background-color: ##FFFFFF }">
+
+        <div class="bg-light-yellow { background-color: ##FBF1A9 }">
+            <div class="f3 lh-copy outline w-100 pa3 mr2 tc ttu">
+
+
+                <h1>Our Process</h1>
+
+            </div>
         </div>
+
     </div>
-    <div class="cf">
-        <div class="fl w-100 w-25-l pl3-l mb3 mb4-l">
-            <div class="cover pv5 pv6-m pv7-l"
-                style="background:black url(http://mrmrs.github.io/photos/051.jpg) center;"> </div>
-        </div>
+
+
+    <section class="mw7 center avenir">
+        <!-- <h2 class="baskerville fw1 ph3 ph0-l">News</h2> -->
+        <article class="bt bb b--black-10">
+            <a class="db pv4 ph3 ph0-l no-underline black dim" href="#0">
+                <div class="flex flex-column flex-row-ns">
+                    <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                        <img src="https://images.unsplash.com/photo-1545022388-9ba226b35a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                            class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
+                    </div>
+                    <div class="w-100 w-60-ns pl3-ns">
+                        <h1 class="f3 fw1 baskerville mt4 lh-title tc ttu">Design</h1>
+                        <p class="f6 f5-l lh-copy tc">
+                            Lorem ipsum dolor sit amet, te sint utinam eos, ad mei quem veritus suscipiantur. In dicit
+                            delenit mea. Dolor iriure in nec. Ut urbanitas posidonium cum. Qui wisi iudicabit ocurreret
+                            ne, veniam vituperatoribus ex ius, graece veritus definiebas ei his. Pericula urbanitas
+                            reprehendunt sea et.
+
+                        </p>
+
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article class="bt bb b--black-10">
+            <a class="db pv4 ph3 ph0-l no-underline black dim" href="#0">
+                <div class="flex flex-column flex-row-ns">
+                    <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                        <img src="https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                            class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
+                    </div>
+                    <div class="w-100 w-60-ns pl3-ns">
+                        <h1 class="f3 fw1 baskerville mt4 lh-title tc ttu">Build</h1>
+                        <p class="f6 f5-l lh-copy tc">
+                            Lorem ipsum dolor sit amet, te sint utinam eos, ad mei quem veritus suscipiantur. In dicit
+                            delenit mea. Dolor iriure in nec. Ut urbanitas posidonium cum. Qui wisi iudicabit ocurreret
+                            ne, veniam vituperatoribus ex ius, graece veritus definiebas ei his. Pericula urbanitas
+                            reprehendunt sea et.
+
+                        </p>
+
+                    </div>
+                </div>
+            </a>
+        </article>
+        <article class="bt bb b--black-10">
+            <a class="db pv4 ph3 ph0-l no-underline black dim" href="#0">
+                <div class="flex flex-column flex-row-ns">
+                    <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                        <img src="https://images.unsplash.com/photo-1545060894-bd408b72adf5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                            class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
+                    </div>
+                    <div class="w-100 w-60-ns pl3-ns">
+                        <h1 class="f3 fw1 baskerville mt4 lh-title tc ttu">Remodel</h1>
+                        <p class="f6 f5-l lh-copy tc">
+                            Lorem ipsum dolor sit amet, te sint utinam eos, ad mei quem veritus suscipiantur. In dicit
+                            delenit mea. Dolor iriure in nec. Ut urbanitas posidonium cum. Qui wisi iudicabit ocurreret
+                            ne, veniam vituperatoribus ex ius, graece veritus definiebas ei his. Pericula urbanitas
+                            reprehendunt sea et.
+
+                        </p>
+
+                    </div>
+                </div>
+            </a>
+        </article>
+    </section>
+
 
 </main>
+
+
+
+
 
 <!-- SPACE BAR -->
 <!-- <div class="cf">
@@ -65,79 +167,16 @@ About - {{ block.super }} {% endblock title %}
         </span>
     </li> -->
 
-<article class="cf ph3 ph5-ns pv5">
-    <header class="fn fl-ns w-50-ns pr4-ns">
-        <h1 class="f2 lh-title fw9 mb3 mt0 pt3 bt bw2">
-            Services We Provide
-        </h1>
-        <h2 class="f3 mid-gray lh-title">
-            Another statement here
-        </h2>
-    </header>
-    <div class="fn fl-ns w-50-ns">
-        <p class="f5 lh-copy measure mt0-ns">
-            TYPOGRAPHY, even when poorly executed, can never be taken for granted;
-            nor is it ever accidental. Indeed, beauti- fully typeset pages are always
-            the result of long experience. Now and then they even attain the rank of
-            great artistic achievement. But the art of typesetting stands apart from
-            ex- pressive artwork, because the appeal is not limited to a small
-            circle. It is open to everyone's critical judgment, and nowhere does this
-            judgment carry more weight. Typography that can- not be read by everybody
-            is useless. Even for someone who constantly ponders matters of
-            readability and legibility, it is difficult to determine whether
-            something can be read with ease, but the average reader will rebel at
-            once when the type is too small or otherwise irritates the eye; both are
-            signs of a certain illegibility already.
-        </p>
-        <p class="f5 lh-copy measure">
-            All typography consists of letters. These appear either in the form of a
-            smoothly running sentence or as an assembly of lines, which may even have
-            contrasting shapes. Good typog- raphy begins, and this is no minor
-            matter, with the typeset- ting of a single line of text in a book or a
-            newspaper. Using exactly the same typeface, it is possible to create either
-            a pleasant line, easily read, or an onerous one. Spacing, if it is too wide
-            or too compressed, will spoil almost any typeface.
-        </p>
-    </div>
-</article>
 
-<div class="cf dn">
-    <div class="fl w-100 w-50-l">
-        <p class="f5 pv4">
-            During high tides, water would flow directly into the pools from the
-            nearby ocean, recycling the <span class="db f4 f3-m f1-l fw6 measure lh-title">two million US gallons of
-                water in about an hour. </span>
-        </p>
-    </div>
-    <div class="fl w-100 w-50-l">
-        <p class="f5">
-            During low tides, a powerful turbine water pump,
-            built inside a cave at sea level, could be switched on from a control
-            room and could fill the tanks at a rate of 6,000 US gallons a minute,
-            recycling all the water in five hours.
-        </p>
-    </div>
-</div>
-<div class="cf">
-    <div class="fl w-100 w-50-l pr2-l pb3">
-        <img class="db w-100" src="http://mrmrs.github.io/photos/010.jpg"
-            alt="Photo of a dusk skyline above a grassy rockface covered in trees.">
-    </div>
-    <div class="fl w-50 w-50-l pr1 pr0-l pl2-l pb3">
-        <img class="db w-100" src="http://mrmrs.github.io/photos/011.jpg"
-            alt="Photo of the sea and sky on the horizon with the foundations of a demolished house.">
-    </div>
-    <div class="fl w-50 w-50-l pl2 pl0-l pr2-l pb3">
-        <img class="db w-100" src="http://mrmrs.github.io/photos/012.jpg"
-            alt="Photo of the sea with mist covering the rocky formations near the shore.">
-    </div>
-    <div class="fl w-100 w-50-l pl2-l">
-        <img class="db w-100" src="http://mrmrs.github.io/photos/013.jpg"
-            alt="Photo of the foundations of a building on a cliff overlooking a lighthouse.">
-    </div>
-</div>
-</div>
-</div>
+<!-- SPACE BAR PINK -->
+<!-- <article>
+    <header class="bg-gold sans-serif">
+        <div class="mw9 center pa4 pt5-ns ph7-l" style="background-color: pink">
+
+        </div>
+    </header>
+</article> -->
+
 
 <!-- SOCIAL FOOTER -->
 <footer class="pv4 ph3 ph5-ns tc">
